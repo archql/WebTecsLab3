@@ -8,25 +8,27 @@ import java.io.Serializable;
 
 public class Student implements Serializable {
     private String id;
-    private String name, surname, passportId, passportNo;
+    private String name, surname;
     private String groupNumber;
 
     private boolean isOnline;
     private int year;
     private double avgMark;
 
-    Student(String id, String name, String surname, String passportId, String passportNo, String groupNumber)
+    public Student()
     {
-        this.name = name;
-        this.surname = surname;
-        this.passportId = passportId;
-        this.passportNo = passportNo;
-        this.groupNumber = groupNumber;
-        this.id = id;
-
         year = 1;
         avgMark = 0.0;
         isOnline = false;
+    }
+
+    public Student(String id, String name, String surname, String groupNumber)
+    {
+        this();
+        this.name = name;
+        this.surname = surname;
+        this.id = id;
+        this.groupNumber = groupNumber;
     }
 
     public String getId() {
@@ -40,12 +42,21 @@ public class Student implements Serializable {
         d.close();
         return obj;
     }
-    static String toString(Student obj) {
+    public static String toString(Student obj) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         XMLEncoder e = new XMLEncoder(baos);
         e.writeObject(obj);
         e.close();
         return baos.toString();
+    }
+
+    public static String toSingleLineString(String str)
+    {
+        return str.replaceAll("\n", "<new line symbol>");
+    }
+    public static String toMultiLineString(String str)
+    {
+        return str.replaceAll("<new line symbol>", "\n");
     }
 
     public void setId(String id) {
@@ -66,22 +77,6 @@ public class Student implements Serializable {
 
     public void setSurname(String surname) {
         this.surname = surname;
-    }
-
-    public String getPassportId() {
-        return passportId;
-    }
-
-    public void setPassportId(String passportId) {
-        this.passportId = passportId;
-    }
-
-    public String getPassportNo() {
-        return passportNo;
-    }
-
-    public void setPassportNo(String passportNo) {
-        this.passportNo = passportNo;
     }
 
     public String getGroupNumber() {

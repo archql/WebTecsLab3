@@ -41,7 +41,12 @@ public class ArchiveServer implements IServer {
             return;
         }
         while (true) {
-            var obj = decoder.readObject();
+            Object obj = null;
+            try {
+                obj = decoder.readObject();
+            } catch (Exception e) {
+                break;
+            }
             if (obj == null)
                 break;
             students.put(((Student)obj).getId(), (Student)obj);

@@ -5,25 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3301861f-294f-42e8-8638-8dab7b1698d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab 3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/client/ArchiveClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/client/ClientLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/client/IClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/logics/IUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/logics/Rights.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/logics/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/server/ArchiveServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/server/AuthorizedServerUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/server/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/server/IServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/server/ServerUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/server/ServerLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/client/ArchiveClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/client/ArchiveClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/client/ClientLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/client/ClientLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/logics/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/logics/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/server/ArchiveServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/server/ArchiveServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/archql/labs/wtlab3/server/ClientHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +59,7 @@
       <recent name="com.archql.labs.wtlab3.server" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ClientLauncher">
     <configuration name="ClientLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.archql.labs.wtlab3.client.ClientLauncher" />
       <module name="Lab 3" />
@@ -85,9 +73,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServerLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.archql.labs.wtlab3.server.ServerLauncher" />
+      <module name="Lab 3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.archql.labs.wtlab3.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ClientLauncher" />
+        <item itemvalue="Application.ServerLauncher" />
       </list>
     </recent_temporary>
   </component>
@@ -113,5 +115,21 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/archql/labs/wtlab3/client/ClientLauncher.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/archql/labs/wtlab3/logics/Student.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

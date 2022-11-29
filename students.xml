@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="16.0.1" class="java.beans.XMLDecoder">
+ <object class="com.archql.labs.wtlab3.logics.Student">
+  <void property="groupNumber">
+   <string>051006</string>
+  </void>
+  <void property="id">
+   <string>05100137</string>
+  </void>
+  <void property="name">
+   <string>Andrei</string>
+  </void>
+  <void property="surname">
+   <string>Shulak</string>
+  </void>
+ </object>
+ <object class="com.archql.labs.wtlab3.logics.Student">
+  <void property="groupNumber">
+   <string>051001</string>
+  </void>
+  <void property="id">
+   <string>05100055</string>
+  </void>
+  <void property="name">
+   <string>Artiom</string>
+  </void>
+  <void property="surname">
+   <string>Drankevich</string>
+  </void>
+ </object>
+</java>

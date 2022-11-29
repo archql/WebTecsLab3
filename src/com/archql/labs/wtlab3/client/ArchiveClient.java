@@ -15,6 +15,7 @@ public class ArchiveClient implements IClient {
     @Override
     public void connect(String ip, int port) throws IOException {
         clientSocket = new Socket(ip, port);
+        clientSocket.setSoTimeout(10000);
         out = new PrintWriter(clientSocket.getOutputStream(), true);
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
     }
@@ -23,6 +24,15 @@ public class ArchiveClient implements IClient {
     public String sendMessage(String msg) throws IOException {
         out.println(msg);
         return in.readLine();
+    }
+
+    public String waitForNextMessage() {
+        try {
+            return in.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     @Override
